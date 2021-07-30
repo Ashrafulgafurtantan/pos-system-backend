@@ -17,7 +17,7 @@ namespace pos_system.Controllers
         public IActionResult Add([FromBody] User user)
         {
             var addedUser=_userRepository.Add(user);
-            Console.WriteLine("Hit Korse");
+
             return Ok(addedUser);
         }
 
@@ -25,7 +25,7 @@ namespace pos_system.Controllers
         public IActionResult Login([FromBody] User user)
         {
             var loggedIn = _userRepository.Login(user);
-            Console.WriteLine("Hit Korse");
+
             return Ok(loggedIn);
         }
 
@@ -33,7 +33,7 @@ namespace pos_system.Controllers
         public IActionResult Search(String username)
         {
             var user = _userRepository.Search(username);
-            Console.WriteLine("Hit Korse");
+
             return Ok(user);
         }
 

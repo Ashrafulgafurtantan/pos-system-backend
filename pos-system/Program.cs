@@ -13,7 +13,7 @@ namespace pos_system
             //CreateHostBuilder(args).Build().Run();
             try
             {
-                Console.WriteLine("Hello  World");
+
                 var host = new WebHostBuilder()
                     .UseKestrel()
                     .UseContentRoot(Directory.GetCurrentDirectory())

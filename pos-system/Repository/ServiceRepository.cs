@@ -48,7 +48,7 @@ namespace pos_system.Repository
 
         public List<Service> GetAll()
         {
-            Console.WriteLine("hit korse");
+
             return DatabaseContext.Services.ToList();
         }
     }

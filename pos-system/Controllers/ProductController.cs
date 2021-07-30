@@ -30,7 +30,7 @@ namespace pos_system.Controllers
         [HttpPost("api/admin/stock/delete")]
         public IActionResult Delete([FromBody] Product product)
         {
-            Console.WriteLine("Hit korse");
+
             var deleted = _productRepository.Delete(product);
             return Ok(deleted);
         }
